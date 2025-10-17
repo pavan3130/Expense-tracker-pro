@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expense Tracker Pro</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>💰 Expense Tracker Pro</h1>
+
+    <div class="balance">
+        <h2>Balance: ₹<span id="balance">0</span></h2>
+    </div>
+
+    <div class="income-expense">
+        <div>Income: ₹<span id="income">0</span></div>
+        <div>Expense: ₹<span id="expense">0</span></div>
+    </div>
+
+    <div class="transaction-form">
+        <input type="text" id="desc" placeholder="Description">
+        <input type="number" id="amount" placeholder="Amount">
+        <select id="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <select id="category">
+            <option value="general">General</option>
+            <option value="food">Food</option>
+            <option value="transport">Transport</option>
+            <option value="shopping">Shopping</option>
+            <option value="salary">Salary</option>
+            <option value="other">Other</option>
+        </select>
+        <button id="addBtn">Add Transaction</button>
+    </div>
+
+    <h2>Transactions</h2>
+    <ul id="transactionsList"></ul>
+
+    <h2>Category Breakdown</h2>
+    <canvas id="categoryChart" width="350" height="200"></canvas>
+
+    <h2>Monthly Summary</h2>
+    <canvas id="monthlyChart" width="350" height="200"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js" defer></script>
+</body>
+</html>

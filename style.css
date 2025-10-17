@@ -1,0 +1,17 @@
+* { box-sizing: border-box; margin:0; padding:0; font-family:"Poppins", sans-serif; }
+body { background:#f0f2f5; display:flex; justify-content:center; align-items:center; min-height:100vh; }
+.container { background:#fff; padding:2rem; border-radius:12px; width:380px; box-shadow:0 4px 20px rgba(0,0,0,0.2); }
+h1,h2 { text-align:center; margin-bottom:1rem; }
+.balance { margin-bottom:1rem; font-size:1.3rem; text-align:center; }
+.income-expense { display:flex; justify-content:space-around; margin-bottom:1rem; font-weight:bold; }
+.transaction-form { display:flex; flex-direction:column; gap:0.5rem; margin-bottom:1rem; }
+.transaction-form input, .transaction-form select, .transaction-form button { padding:0.5rem; border-radius:8px; border:1px solid #ccc; }
+button { cursor:pointer; background:#111; color:#fff; border:none; }
+button:hover { background:#333; }
+#transactionsList { list-style:none; margin-bottom:1rem; }
+.transaction-item { display:flex; justify-content:space-between; padding:0.5rem; margin-bottom:0.5rem; border-radius:8px; color:#fff; }
+.income { background:#28a745; }
+.expense { background:#dc3545; }
+.delete-btn { background:transparent; border:none; color:#fff; cursor:pointer; font-weight:bold; }
+canvas { margin-top:1rem; }
+
